@@ -13,7 +13,7 @@
     <body>
 
 <div id="popup">
-    <div id="popup-form">
+    <div id="popup-form" class="flex">
         <div class="container">
             <h3 class="center black"><strong>Any Questions?</strong></h3>
             <p>I will call you back in the next few hours 
@@ -43,80 +43,86 @@
 </div>
 
 <nav class="background-gray photo">
-    <div class="container flex">
-        <div>
-            <a href="#">Services</a>
-            <a id="active" href="#">Portfolio</a>
-            <a href="#">Pricing</a>
-        </div>
-        <div class="row right black">
-            <span><strong id="phone">+1 (202) 202-0202</strong></span>
-            <button class="button-call">Request A Callback</button>
+    <div class="container">
+        <div class="flex center justify-between justify-around">
+                <div class="item flex justify-small">
+                    <a href="#" class="item">Services</a>
+                    <a id="active" href="#" class="item">Portfolio</a>
+                    <a href="#" class="item">Pricing</a>
+                </div>
+        <div class="flex justify-between row justify-small">
+            <div class="black smallerText item" id="phone">+1 (202) 202-0202</div>
+            <div class="item">
+                <button class="button-call">Request A Callback</button>
+            </div>
         </div>
     </div>
-    <div class="container" id="main">
-        <h1 class="black">Thomas A. Anderson</h1>
-        <h5>Frontend-developer and HTML layout designer</h5>
-        <button class="button-learn">Learn more</button>
+
+    <div class="flex" id="main">
+        <div class="item">
+            <h1 class="black">Thomas A. Anderson</h1>
+            <h5 class="item">Frontend-developer and HTML layout designer</h5>
+            <button class="button-learn">Learn more</button>
+            <div class="photo"></div>
+        </div>
     </div>
 </nav>
 
-<div class="container center black">
-    <h2>What Do I Do</h2>
-</div>
-
 <div class="container center">
-    <div>
-        <img src="img/icons/tools-and-utensils.png" class="icon" alt="Web design"></i>
-        <p>Landing pages and websites design of any complexity</p>
+    <div class="black">
+        <h2>What Do I Do</h2>
     </div>
-    <div>
-        <img src="img/icons/responsive.png" class="icon" alt="Responsive layout">
-        <p>Responsive layout for all kind of browsers and devices</p>
-    </div>
-    <div>
-        <img src="img/icons/programming.png" class="icon" alt="Frontend">
-        <p>Frontend-development and programming</p>
-    </div>
-    <div>
-        <img src="img/icons/coding (1).png" class="icon" alt="Web design"></i>
-        <p>Patching and adaptation of legacy design</p>
-    </div>
-</div>
 
-<div class="container center">
+    <div class="flex align-start">
+        <div class="fourCol">
+            <img src="img/icons/tools-and-utensils.png" class="icon" alt="Web design"></i>
+            <p>Landing pages and websites design of any complexity</p>
+        </div>
+        <div class="fourCol">
+            <img src="img/icons/responsive.png" class="icon" alt="Responsive layout">
+            <p>Responsive layout for all kind of browsers and devices</p>
+        </div>
+        <div class="fourCol">
+            <img src="img/icons/programming.png" class="icon" alt="Frontend">
+            <p>Frontend-development and programming</p>
+        </div>
+        <div class="fourCol">
+            <img src="img/icons/coding (1).png" class="icon" alt="Web design"></i>
+            <p>Patching and adaptation of legacy design</p>
+        </div>
+    </div>
+
     <div>
         <button class="button-learn">Get quote</button>
     </div>
 </div>
 
 <div class="background-gray">
-    <div class="container center black">
-        <h2>My Projects</h2>
-    </div>
-    
     <div class="container center">
-        <div>
-            <img src="img/Portfolio_1.jpg" class="project-img" alt="Project #1. Photo by 
-            Bud Helisson from Unsplash"></i>
-            <p>Trinity Smith, MD Professional Website</p>
+        <div class="black">
+            <h2>My Projects</h2>
         </div>
-        <div>
-            <img src="img/Portfolio_2.jpg" class="project-img" alt="Project #2. Photo by Josh Riemer from Unsplash">
-            <p>3D Scanning Service's Website</p>
-        </div>
-        <div>
-            <img src="img/Portfolio_3.jpg" class="project-img" alt="Project #3. Photo by 
-            Mack Fox (MusicFox) from Unsplash">
-            <p>Cycling Gear Store</p>
-        </div>
-    </div>
     
-    <div class="container center">
+        <div class="flex align-start justify-between">
+            <div class="fourCol threeCol">
+                <img src="img/Portfolio_1.jpg" class="project-img" alt="Project #1. Photo by 
+                Bud Helisson from Unsplash"></i>
+                <p>Trinity Smith, MD Professional Website</p>
+            </div>
+            <div class="fourCol threeCol">
+                <img src="img/Portfolio_2.jpg" class="project-img" alt="Project #2. Photo by Josh Riemer from Unsplash">
+                <p>3D Scanning Service's Website</p>
+            </div>
+            <div class="fourCol threeCol">
+                <img src="img/Portfolio_3.jpg" class="project-img" alt="Project #3. Photo by 
+                Mack Fox (MusicFox) from Unsplash">
+                <p>Cycling Gear Store</p>
+            </div>
+        </div>
+        
         <div>
             <button class="button-learn">Order project</button>
         </div>
-    </div>
 </div>
 
 <div class="background-red">
@@ -132,39 +138,41 @@
 
 <footer>
     <div class="background-gray">
-        <div class="container">
-            <div class="row">
-                <div class="column">
-                    <a href="#">Services</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Pricing</a>
+        <div class="container flex justify-between justify-around">
+            <div class="item flex column">
+                <a class="" href="#">Services</a>
+                <a class="" href="#">Portfolio</a>
+                <a class="" href="#">Pricing</a>
+            </div>
+            <address class="item flex column">
+                <div class="">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+1 (202) 202-0202">+1 (202) 202-0202</a><br/>
                 </div>
-                <div class="column">
-                    <address>
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:+1 (202) 202-0202">+1 (202) 202-0202</a><br/>
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:anna@wedare.tech">anna@wedare.tech</a><br/>
-                    </address>
+                <div class="">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:anna@wedare.tech">anna@wedare.tech</a><br/>
                 </div>
-                <div class="column">
-                    <div>
-                        <button class="button-call">Request A Callback</button>
-                    </div>
-                    <div class="row">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+            </address>
+            <div class="item flex column">
+                <div class="">
+                    <button class="button-call">Request A Callback</button>
+                </div>
+                <div class="flex justify-around padding-top">
+                    <a href="#" class="item"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="item"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="item"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="item"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="copyright center">
+    <div class="copyright">
+        <div class="container center">
         © Anna Kova, 2018<script type="text/JavaScript">
             new Date().getFullYear()>2018 && document.write("-" + new Date().getFullYear());</script>
+        </div>
     </div>
 </footer>
     
